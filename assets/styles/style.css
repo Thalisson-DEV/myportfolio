@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    scroll-behavior: smooth;
+}
+
+*, html {
+    scroll-behavior: smooth !important;
+}
+
+body {
+    background: url(/assets/background.png);
+    background-size: cover;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 35px;
+    padding: 20px 120px;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+header .navbar a{
+    color: #fff;
+    align-items: center;
+    text-decoration: none;
+    margin-right: 72px;
+    margin-left: 60px;
+    font-weight: 700;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    opacity: 0.2;
+}
+
+header nav a:hover, nav a.active {
+    opacity: 1;
+    color: rgb(109, 204, 123);
+    transition: all 0.3s ease;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homesec {
+    display: flex;
+    flex-direction: column;
+    height: 150vh;
+    cursor: default;
+}
+
+.homesec img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 30%;
+    scale: 40%;
+    left: 50%;
+    right: 50%;
+    transition: all 0.3s ease;
+}
+
+.homesec img:hover {
+    opacity: 100%;
+    scale: 50%;
+    transition: all 0.3s ease;
+}
+
+.homesec h1{
+    color: #fff;
+    font-size: 230px;
+    font-weight: 700;
+}
+
+.homesec a {
+    position: relative;
+    bottom: 29px;
+}
+
+.about-mesec {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-mesec h1 {
+    text-justify: initial;
+    color: #fff;
+    font-size: 60px;
+    padding-bottom: 60px;
+    width: 65%;
+    cursor: default;
+}
+
+.about-mesec .btns {
+    margin-right: 475px;
+}
+
+.about-mesec .btns a {
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid rgba(255, 255, 255, 0.3);;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(11.5757px);   
+    border-radius: 23px;
+    padding: 15px 70px;
+    margin-right: 27px;
+    transition: all 0.3s ease;
+}
+
+.about-mesec .btns a:hover {
+    color: #111;
+    background: #67FF63;
+    transition: all 0.3s ease;
+}
+
+.about-mesec img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 30%;
+    position: absolute;
+    bottom: 24px;
+    scale: 40%;
+    left: 50%;
+    right: 50%;
+    transition: all 0.3s ease;
+}
+
+.about-mesec img:hover {
+    opacity: 100%;
+    scale: 50%;
+    transition: all 0.3s ease;
+}
+
+.workssec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.workssec h1 {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.workssec .works {
+    scale: 80%;
+}
+
+.workssec .works img {
+    margin-top: 30px;
+    opacity: 0.2;
+    transform: translateY(0px);
+    transition: all 0.3s ease;
+}
+
+.workssec .works img:hover {
+    opacity: 1;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(1px);
+    transform: translateX(-100px);
+    transition: all 2s ease;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transition: all 2s ease;
+}
